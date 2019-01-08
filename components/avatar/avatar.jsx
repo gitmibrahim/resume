@@ -5,7 +5,7 @@ import './avatar.css'
 const Avatar = () => {
   return (
       <div id="profilePicContainer">
-        <img id="profilePic" src="assets\avatar.jpg" alt="Muhammed Ibrahim's Image"/>
+        <img id="profilePic" src="../assets/images/avatar.jpg" alt="Muhammed Ibrahim's Image"/>
       </div>
   )
 }

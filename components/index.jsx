@@ -5,8 +5,8 @@ import Code from './code/code.jsx'
 import '../assets/public/fonts.css'
 import './index.css'
 // import 'highlight.js/styles/tomorrow-night-bright.css'
-import 'highlight.js/styles/railscasts.css'
-import {languages, info, tools, learning, projects} from '../models/languages.js'
+import '../assets/styles/railscasts.css'
+import {languages, info, tools, learning, projects} from '../models/data.js'
 
 const App = () => {
     let id = 0

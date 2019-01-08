@@ -1,6 +1,7 @@
 {
   "name": "tdsom",
   "version": "1.0.0",
+  "homepage": "https://gitmibrahim.github.io/resume",
   "description": "",
   "main": "index.js",
   "babel": {
