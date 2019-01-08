@@ -1,0 +1,37 @@
+.langName {
+  margin: 0 1px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  position: relative;
+  top: 24px;
+  font-size: 12px;
+  padding: 4px 10px;
+  background-color: grey;
+  color: #fff;
+  font-family: MerriweatherSansRegular;
+}
+
+.preCode {
+  margin: 0;
+}
+
+.hljs::-webkit-scrollbar {
+  height: 5px;
+}
+
+.hljs::-webkit-scrollbar-track {
+  background: #000; 
+}
+
+.hljs::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: #5f9ea0; 
+}
+
+.hljs::-webkit-scrollbar-thumb:hover {
+  background: #448b8d; 
+}
+
+.hljs::-webkit-scrollbar-thumb:active {
+  background: #267174; 
+}
