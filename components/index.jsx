@@ -21,7 +21,6 @@ const App = () => {
                 {info.map(snippet => <Code key={snippet.id} noHeadline={true} {...snippet} />)}
             </aside>
             <article id="codeBlocks">
-                <p>find this resume <a href="https://gitmibrahim.github.io/resume/">here on GitHub Pages</a></p>
                 <p id="jump">jumb to: 
                     <br/>
                     <a href="#history">How I Coded Along The Past 2 Years</a>{' - '}
