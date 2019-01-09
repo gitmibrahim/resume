@@ -6,7 +6,6 @@ module.exports = {
     entry: './components/index.jsx',
     output: {
         path: path.resolve(__dirname, 'docs'),
-        publicPath: './',
         chunkFilename: `[id].js`
     },
     module: {

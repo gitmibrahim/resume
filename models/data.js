@@ -143,6 +143,8 @@ const tools = ['../assets/tools/webpack.png', '../assets/tools/sass.svg', '../as
 
 const learning = ['../assets/toLearn/vuejs.png', '../assets/toLearn/nodejs.png', '../assets/toLearn/jasmine.svg']
 
+const rLearning = ['C++', 'Discrete Math', 'Dessign Patterns', 'Data Structure', 'Algorithms']
+
 const projects = [
     {title: 'Playground', link: 'https://mibrahim-resume.firebaseapp.com/playground'},
     {title: 'Interview Task', link: 'https://frontend-resume-1.firebaseapp.com'},
@@ -150,4 +152,4 @@ const projects = [
     {title: 'Ma3arij', link: 'http://www.ma3arij.com'}
 ]
 
-export {languages, info, tools, learning, projects}
+export {languages, info, tools, learning, rLearning, projects}
