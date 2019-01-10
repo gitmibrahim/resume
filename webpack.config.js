@@ -6,8 +6,7 @@ module.exports = {
     entry: './components/index.jsx',
     output: {
         path: path.resolve(__dirname, 'docs'),
-        publicPath: 'https://github.com/gitmibrahim/resume/docs/',
-        chunkFilename: '[id].chunk.js'
+        chunkFilename: `[id].js`
     },
     module: {
         rules: [
