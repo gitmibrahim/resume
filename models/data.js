@@ -141,7 +141,7 @@ const languages = [
 
 const tools = ['../assets/tools/webpack.png', '../assets/tools/sass.svg', '../assets/tools/babel.png', '../assets/tools/gulp.png', '../assets/tools/git.png', '../assets/tools/github.png']
 
-const learning = ['../assets/toLearn/vuejs.png', '../assets/toLearn/nodejs.png', '../assets/toLearn/jasmine.svg']
+const learning = ['../assets/toLearn/vuejs.png', '../assets/toLearn/nodejs.png', '../assets/toLearn/jasmine.svg', '../assets/toLearn/polymers.png']
 
 const rLearning = ['C++', 'Discrete Math', 'Dessign Patterns', 'Data Structure', 'Algorithms']
 
