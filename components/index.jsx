@@ -4,7 +4,7 @@ import Avatar from './avatar/avatar.jsx'
 import Code from './code/code.jsx'
 import '../assets/public/fonts.css'
 import './index.css'
-// import 'highlight.js/styles/tomorrow-night-bright.css'
+import './print.css'
 import '../assets/styles/railscasts.css'
 import {languages, info, tools, learning, rLearning, projects} from '../models/data.js'
 
@@ -24,11 +24,12 @@ const App = () => {
     const resetId = () => id = 0
     return (
         <div id="app">
-            <aside id="profile">
+            <aside id="profile" className="onPrint">
                 <Avatar />
                 {info.map(snippet => <Code key={snippet.id} noHeadline={true} {...snippet} />)}
             </aside>
-            <article id="codeBlocks">
+            <article id="codeBlocks" className="onPrint">
+                <p className="visibleOnPrint">find this resume <a href="https://gitmibrahim.github.io/resume/">here on GitHub Pages</a></p>
                 <p id="jump">jumb to: 
                     <br/>
                     <a href="#history">{headlines[id++]}</a>{' - '}

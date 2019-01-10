@@ -122,3 +122,8 @@ h3 span {
 .hidden {
   display: none;
 }
+
+.visibleOnPrint {
+  display: none;
+}
+
