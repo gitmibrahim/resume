@@ -19,7 +19,7 @@ const info = [
         code: `let companies = [
     'Whipix',
     'Business Boomers'
-].push('fly365')`
+]`
     },
 ]
 
