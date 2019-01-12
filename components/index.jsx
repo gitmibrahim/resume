@@ -40,7 +40,7 @@ const App = () => {
                 </p>
                 <span className="hidden">{id = 0}</span>
                 <hr id="history" />
-                <h3>{headlines[id++]}: <span><a href="#jump">&uarr;</a></span></h3>
+                <h3>{headlines[id++]}: <span><a href="#jump" title="back to top">&uarr;</a></span></h3>
                 {languages.map(snippet => 
                     snippet.title == 'break'
                         ? <p key={snippet.id} className="phase">{snippet.phase}:</p>
@@ -48,25 +48,25 @@ const App = () => {
                 )}
 
                 <hr id="tools"/>
-                <h3>{headlines[id++]}: <span><a href="#jump">&uarr;</a></span></h3>
+                <h3>{headlines[id++]}: <span><a href="#jump" title="back to top">&uarr;</a></span></h3>
                 <div className="tools">
                     {tools.map(tool => <img key={tool} src={tool} alt={tool.replace(/^.*[\\\/]/, '')} />)}
                 </div>
 
                 <hr id="learning"/>
-                <h3>{headlines[id++]}: <span><a href="#jump">&uarr;</a></span></h3>
+                <h3>{headlines[id++]}: <span><a href="#jump" title="back to top">&uarr;</a></span></h3>
                 <div className="tools">
                     {learning.map(thing => <img key={thing} src={thing} alt={thing.replace(/^.*[\\\/]/, '')} />)}
                 </div>
 
                 <hr id="rLearning"/>
-                <h3>{headlines[id++]}: <span><a href="#jump">&uarr;</a></span></h3>
+                <h3>{headlines[id++]}: <span><a href="#jump" title="back to top">&uarr;</a></span></h3>
                 <div className="tools">
                     {rLearning.map(r => <p key={r}>{r}</p>)}
                 </div>
 
                 <hr id="portfolio"/>
-                <h3>{headlines[id++]}: <span><a href="#jump">&uarr;</a></span></h3>
+                <h3>{headlines[id++]}: <span><a href="#jump" title="back to top">&uarr;</a></span></h3>
                 <div className="tools">
                     {projects.map(project => <a key={project.link} href={project.link} target="_blank">{project.title}</a>)}
                 </div>
