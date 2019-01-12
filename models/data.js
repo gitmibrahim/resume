@@ -143,7 +143,7 @@ const tools = ['../assets/tools/webpack.png', '../assets/tools/sass.svg', '../as
 
 const learning = ['../assets/toLearn/vuejs.png', '../assets/toLearn/nodejs.png', '../assets/toLearn/jasmine.svg', '../assets/toLearn/polymers.png']
 
-const rLearning = ['C++', 'Discrete Math', 'Dessign Patterns', 'Data Structure', 'Algorithms']
+const rLearning = ['C Lang.', 'Discrete Math', 'Dessign Patterns', 'Data Structure', 'Algorithms']
 
 const projects = [
     {title: 'Playground', link: 'https://mibrahim-resume.firebaseapp.com/playground'},
