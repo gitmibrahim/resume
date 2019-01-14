@@ -16,7 +16,7 @@ module.exports = {
             { test: /\.(sass|scss)$/, use: ["style-loader", "css-loader", "sass-loader"] }
         ]
     },
-    mode: 'development',
+    mode: 'production',
     plugins: [
         new HtmlWebpackPlugin({
             template: './components/index.html'
