@@ -3,20 +3,20 @@ const info = [
         code: `const name = "Muhammed Ibrahim"`
     },
     {
-        code: `let personalInfo = {
+        code: `const personalInfo = {
     email: "muhammed.ibrahim.me@gmail.com",
     mobile: "01025075652",
     address: "Cairo, Egypt."
 }`
     },
     {
-        code: `let experienceInYears = {
+        code: `const experienceInYears = {
     amateur: 2,
     professional: 1
 }`
     },
     {
-        code: `let companies = [
+        code: `const companies = [
     'Whipix',
     'Business Boomers'
 ]`
