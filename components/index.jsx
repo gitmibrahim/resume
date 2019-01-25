@@ -50,13 +50,13 @@ const App = () => {
                 <hr id="tools"/>
                 <h3>{headlines[id++]}: <span><a href="#jump" title="back to top">&uarr;</a></span></h3>
                 <div className="tools">
-                    {tools.map(tool => <img key={tool} src={tool} alt={tool.replace(/^.*[\\\/]/, '')} />)}
+                    {tools.map(tool => <img key={tool} src={tool} alt={tool.replace(/^.*[\\\/]/, '')} title={tool.match(/([^\/]+)(?=\.\w+$)/)[0]} />)}
                 </div>
 
                 <hr id="learning"/>
                 <h3>{headlines[id++]}: <span><a href="#jump" title="back to top">&uarr;</a></span></h3>
                 <div className="tools">
-                    {learning.map(thing => <img key={thing} src={thing} alt={thing.replace(/^.*[\\\/]/, '')} />)}
+                    {learning.map(thing => <img key={thing} src={thing} alt={thing.replace(/^.*[\\\/]/, '')} title={thing.match(/([^\/]+)(?=\.\w+$)/)[0]} />)}
                 </div>
 
                 <hr id="rLearning"/>
