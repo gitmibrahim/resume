@@ -137,11 +137,41 @@ const languages = [
  export default Header
          `
     },
+    {
+        title: 'Vue.js',
+        language: 'javascript',
+        code: `
+
+ const App = new Vue({
+    el: '#app',
+    store,
+    data: {
+        products: [],
+    },
+    components: {
+        'product-card': productCard,
+        'product-details': productDetails,
+    },
+    created() {
+        this.$http
+        .get('https://reqres.in/api/products/3')
+        .then(response => {
+            this.products = response.data
+        })
+    },
+    computed: {
+        selectedProduct() {
+        return this.$store.state.selectedProduct
+        }
+    }
+ })
+         `
+    },
 ]
 
-const tools = ['../assets/tools/webpack.png', '../assets/tools/sass.svg', '../assets/tools/babel.png', '../assets/tools/gulp.png', '../assets/tools/git.png', '../assets/tools/github.png']
+const tools = ['../assets/tools/webpack.png', '../assets/tools/gulp.png', '../assets/tools/babel.png', '../assets/tools/sass.svg', '../assets/tools/vuex.png', '../assets/tools/git.png', '../assets/tools/github.png']
 
-const learning = ['../assets/toLearn/vuejs.png', '../assets/toLearn/nodejs.png', '../assets/toLearn/jasmine.svg', '../assets/toLearn/polymers.png']
+const learning = ['../assets/toLearn/jasmine.svg', '../assets/toLearn/nodejs.png', '../assets/toLearn/polymers.png']
 
 const rLearning = ['C Lang.', 'Discrete Math', 'Dessign Patterns', 'Data Structure', 'Algorithms']
 
@@ -149,7 +179,8 @@ const projects = [
     {title: 'Playground', link: 'https://mibrahim-resume.firebaseapp.com/playground'},
     {title: 'Interview Task', link: 'https://frontend-resume-1.firebaseapp.com'},
     {title: 'Hanagoeslocal', link: 'https://hanagoeslocal.com/shop'},
-    {title: 'Ma3arij', link: 'http://www.ma3arij.com'}
+    {title: 'Ma3arij', link: 'http://www.ma3arij.com'},
+    {title: 'Filteration Task', link: 'https://gitmibrahim.github.io/fly365-code-challenge/src/index.html'}
 ]
 
 export {languages, info, tools, learning, rLearning, projects}
