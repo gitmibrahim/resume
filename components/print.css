@@ -3,14 +3,14 @@
     display: block !important;
   } 
 
-  aside.onPrint {
+  #profile.onPrint {
     position: initial !important;
     width: 20vw !important;
     min-width: 300px !important;
     height: unset !important;
   }
 
-  article.onPrint {
+  #codeBlocks.onPrint {
     width: 80vw !important;
     margin-left: 0 !important;
   }

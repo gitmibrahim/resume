@@ -10,13 +10,13 @@ body::-webkit-scrollbar-track {
 }
 body::-webkit-scrollbar-thumb {
   border-radius: 10px;
-  background: #b8a500; 
+  background: #FFE70B; 
 }
 body::-webkit-scrollbar-thumb:active {
   background: #f1e797; 
 }
 ::selection {
-  color: #FFE70B;
+  color: #b8a500;
   background: #2c251b;
 }
 
@@ -37,24 +37,29 @@ body::-webkit-scrollbar-thumb:active {
 }
 
 #profile::-webkit-scrollbar {
-    width: 7px;
-  }
+  width: 7px;
+}
 
-  #profile::-webkit-scrollbar-track {
-    background: #000; 
-  }
+#profile::-webkit-scrollbar-track {
+  background: #000; 
+}
 
-  #profile::-webkit-scrollbar-thumb {
-    border-radius: 10px;
-    background: #5f9ea0; 
-  }
+#profile::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: #5f9ea0; 
+}
 
-  #profile::-webkit-scrollbar-thumb:hover {
-    background: #448b8d; 
-  }
+#profile::-webkit-scrollbar-thumb:hover {
+  background: #448b8d; 
+}
 
-  #profile::-webkit-scrollbar-thumb:active {
+#profile::-webkit-scrollbar-thumb:active {
     background: #267174; 
+}
+
+#profile .codeContainer {
+  width: 80%;
+  margin: 50px auto;
 }
 
 #codeBlocks {
@@ -62,11 +67,6 @@ body::-webkit-scrollbar-thumb:active {
   padding: 8vmin;
   background-color: #f0cd06;
   margin-left: 300px;
-}
-
-#profile .codeContainer {
-  width: 80%;
-  margin: 50px auto;
 }
 
 #codeBlocks .codeContainer {
@@ -78,7 +78,11 @@ body::-webkit-scrollbar-thumb:active {
   border-radius: 10px
 }
 
-h3, p, a {
+h1 {
+  font-size: 1.17em;
+}
+
+h1, h2, nav, p, a {
   color: #000;
   font-family: MerriweatherSansRegular;
 }
@@ -88,42 +92,6 @@ h3, p, a {
   text-decoration: none;
 }
 
-h3 span {
-  color: #e7e7e7;
-}
-
-.phase {
-  margin: 3em 0 0;
-}
-
-.tools  {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
-}
-.tools img {
-  max-width: 300px;
-  max-height: 100px;
-  margin: 30px 10px;
-}
-.tools a::after{
-  display: inline-block;
-  content: '';
-  background-repeat: no-repeat;
-  background-image: url(../assets/images/external-link.svg);
-  background-size: 12px;
-  width: 12px;
-  height: 20px;
-  margin-top: 7px;
-  margin-left: 3px;
-  vertical-align: text-top;
-}
-
-.hidden {
-  display: none;
-}
-
 .visibleOnPrint {
   display: none;
 }
-

@@ -24,6 +24,14 @@ const info = [
     },
 ]
 
+const headlines = [
+    {id: 'history', content: 'How I Coded Along The Past 2 Years'},
+    {id: 'tools', content: 'Helping Tools'},
+    {id: 'learning', content: 'Currently Learning'},
+    {id: 'rLearning', content: 'Recursively Learning'},
+    {id: 'portfolio', content: 'Some Projects and Contributions'},
+]
+
 const languages = [
     {
         title: 'break',
@@ -184,4 +192,4 @@ const projects = [
     {title: 'Filteration Task', link: 'https://gitmibrahim.github.io/fly365-code-challenge/src/index.html'}
 ]
 
-export {languages, info, tools, learning, rLearning, projects}
+export {headlines,languages, info, tools, learning, rLearning, projects}

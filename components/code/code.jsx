@@ -5,7 +5,7 @@ import './code.css'
 const Code = props => {
   return (
     <div className="codeContainer">
-      {!props.noHeadline && <p className="langName">{props.title}</p>}
+      {!props.noHeadline && <h2 className="langName">{props.title}</h2>}
       <pre className="preCode">
         <code className={props.language || 'javascript'}>
           {`${props.code}`}

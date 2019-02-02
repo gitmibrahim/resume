@@ -3,10 +3,13 @@ var HtmlWebpackPlugin = require('html-webpack-plugin')
 var CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
-    entry: './components/index.jsx',
+    entry: {
+        index: './components/index.jsx'
+    },
     output: {
-        path: path.resolve(__dirname, 'docs'),
-        chunkFilename: `[id].js`
+        filename: '[name].bundle.js',
+        chunkFilename: '[name].bundle.js',
+        path: path.resolve(__dirname, 'docs')
     },
     module: {
         rules: [
