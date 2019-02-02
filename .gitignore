@@ -2,5 +2,5 @@
 **/node_modules
 
 # Files
-package-lock.json
 codeExamples.jsx
+package-lock.json
