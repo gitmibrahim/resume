@@ -1,4 +1,7 @@
 @media print {
+  #app {
+    display: flex !important;
+  }
   .visibleOnPrint {
     display: block !important;
   } 

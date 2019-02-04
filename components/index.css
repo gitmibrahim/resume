@@ -3,6 +3,7 @@ body {
 }
 body::-webkit-scrollbar {
   width: 7px;
+  height: 7px;
 }
 
 body::-webkit-scrollbar-track {
@@ -22,8 +23,26 @@ body::-webkit-scrollbar-thumb:active {
 
 #app {
   display: flex;
-  justify-content: space-between;
   min-height: 100vh;
+}
+
+@media (max-width: 842px) {
+  #app {
+    display: block !important;
+  }
+  #profile {
+    position: initial !important;
+    width: initial !important;
+    height: initial!important;
+  }
+  #codeBlocks {
+    width: initial !important;
+    margin-left: initial !important;
+  }
+  .tools img {
+    max-width: 250px !important;
+    max-height: 100px !important;
+  }
 }
 
 #profile {
@@ -32,7 +51,6 @@ body::-webkit-scrollbar-thumb:active {
   padding: 8vmin 0;
   height: 100%;
   overflow-y: auto;
-  /* background-color: #182828; */
   background-color: #051010;
 }
 
