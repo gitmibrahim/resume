@@ -13,7 +13,9 @@ const info = [
         code: `const experienceInYears = {
     amateur: 1,
     professional: 1,
-    total: this.amateur + this.professional
+    get total() {
+        return this.amateur + this.professional
+    }
 }`
     },
     {
