@@ -172,7 +172,7 @@ const languages = [
     },
     computed: {
         selectedProduct() {
-        return this.$store.state.selectedProduct
+            return this.$store.state.selectedProduct
         }
     }
  })
