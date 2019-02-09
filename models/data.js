@@ -188,7 +188,7 @@ const rLearning = ['C Lang.', 'Discrete Math', 'Dessign Patterns', 'Data Structu
 
 const projects = [
     {title: 'Playground', link: 'https://mibrahim-resume.firebaseapp.com/playground'},
-    {title: 'Interview Task', link: 'https://frontend-resume-1.firebaseapp.com'},
+    {title: 'Interview Task', link: 'https://gitmibrahim.github.io/rizkalla/'},
     {title: 'Hanagoeslocal', link: 'https://hanagoeslocal.com/shop'},
     {title: 'Ma3arij', link: 'http://www.ma3arij.com'},
     {title: 'Filteration Task', link: 'https://gitmibrahim.github.io/fly365-code-challenge/src/index.html'}
