@@ -1,0 +1,92 @@
+#tech {
+  display: flex;
+  min-height: 100vh;
+}
+
+@media (max-width: 842px) {
+  #tech {
+    display: block !important;
+  }
+  #profile {
+    position: initial !important;
+    width: initial !important;
+    height: initial!important;
+  }
+  #codeBlocks {
+    width: initial !important;
+    margin-left: initial !important;
+  }
+  .tools img {
+    max-width: 250px !important;
+    max-height: 100px !important;
+  }
+}
+
+#profile {
+  position: fixed;
+  width: 300px;
+  padding: 8vmin 0;
+  height: 100%;
+  overflow-y: auto;
+  background-color: #051010;
+}
+
+#profile::-webkit-scrollbar {
+  width: 7px;
+}
+
+#profile::-webkit-scrollbar-track {
+  background: #000; 
+}
+
+#profile::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: #5f9ea0; 
+}
+
+#profile::-webkit-scrollbar-thumb:hover {
+  background: #448b8d; 
+}
+
+#profile::-webkit-scrollbar-thumb:active {
+    background: #267174; 
+}
+
+#profile .codeContainer {
+  width: 80%;
+  margin: 50px auto;
+}
+
+#codeBlocks {
+  width: 100%;
+  padding: 8vmin;
+  background-color: #f0cd06;
+  margin-left: 300px;
+}
+
+#codeBlocks .codeContainer {
+  margin: 0 0 60px;
+}
+
+#codeBlocks .hljs {
+  border: 1px solid #fff;
+  border-radius: 10px
+}
+
+h1 {
+  font-size: 1.17em;
+}
+
+h1, h2, nav, p, a {
+  color: #000;
+  font-family: MerriweatherSansRegular;
+}
+
+#jump, #jump * {
+  color: #696969;
+  text-decoration: none;
+}
+
+.visibleOnPrint {
+  display: none;
+}

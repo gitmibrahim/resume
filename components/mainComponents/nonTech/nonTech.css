@@ -1,0 +1,89 @@
+#nonTech {
+  background: #f5f5f5;
+  margin: 0 auto;
+  padding: 0;
+}
+
+#lines {
+  border-left: 1px solid #ffaa9f;
+  border-right: 1px solid #ffaa9f;
+  width: 2px;
+  float: left;
+  margin-left: 40px;
+  height: 100%;
+  position: fixed;
+}
+address {
+  font-style: normal;
+}
+#info a {
+  text-decoration: none;
+  font-family: courier, monospace;
+}
+#info {
+  color: #555;
+  font-size: 22px;
+  padding: 0 !important;
+  width: 100%;
+  font-family: courier, monospace;
+  border: 1px solid #dedede;
+  display: initial;
+}
+#info li {
+  list-style: none;
+  border-bottom: 1px dotted #ccc;
+  height: auto;
+  padding: 10px 10px 10px 70px;
+  word-break: break-word;
+}
+#avatarWrapper {
+  text-indent: 0 !important;
+  margin-bottom: 40px;
+}
+#avatarWrapper #nonTechPic {
+  width: 24vmax;
+  height: 24vmax;
+}
+#info li:hover {
+  background: #f0f0f0;
+  transition: background 0.2s;
+}
+.contact {
+  border: 1px #cbcbcb solid;
+  border-left: 6px #cbcbcb solid;
+  border-right: 0;
+  border-radius: 4px;
+  background: #e9e9e9;
+  font-family: "Fira Mono", "Andale Mono", "Consolas", monospace;
+  letter-spacing: 0px;
+  -webkit-font-feature-settings: none;
+  font-feature-settings: none;
+  -webkit-font-variant-ligatures: none;
+  font-variant-ligatures: none;
+  padding: 5px 0 5px 10px;
+}
+.contact:hover {
+  background: #c9c9c9;
+  border-left-color: #afafaf
+}
+
+li p {
+  display: inline-block;
+}
+
+.projects {
+  margin-right: 20px;
+}
+
+.projects::after{
+  display: inline-block;
+  content: '';
+  background-repeat: no-repeat;
+  background-image: url(../../../assets/images/external-link.svg);
+  background-size: 12px;
+  width: 12px;
+  height: 20px;
+  margin-top: 7px;
+  margin-left: 3px;
+  vertical-align: text-top;
+}

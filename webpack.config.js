@@ -9,7 +9,8 @@ module.exports = {
     output: {
         filename: '[name].bundle.js',
         chunkFilename: '[name].bundle.js',
-        path: path.resolve(__dirname, 'docs')
+        path: path.resolve(__dirname, 'docs'),
+        publicPath: '/',
     },
     module: {
         rules: [
@@ -19,7 +20,10 @@ module.exports = {
             { test: /\.(sass|scss)$/, use: ["style-loader", "css-loader", "sass-loader"] }
         ]
     },
-    mode: 'production',
+    mode: 'development',
+    devServer: {
+        historyApiFallback: true,
+    },
     plugins: [
         new HtmlWebpackPlugin({
             template: './components/index.html'

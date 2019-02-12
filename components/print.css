@@ -1,16 +1,23 @@
 @media print {
-  #app {
+  #tech.onPrint {
     display: flex !important;
   }
   .visibleOnPrint {
     display: block !important;
-  } 
+  }
+  .hiddenOnPrint {
+    display: none !important;
+  }
 
   #profile.onPrint {
-    position: initial !important;
+    position: unset !important;
     width: 20vw !important;
     min-width: 300px !important;
     height: unset !important;
+  }
+  #techPic.onPrint {
+    width: 10vmax;
+    height: 10vmax;
   }
 
   #codeBlocks.onPrint {
