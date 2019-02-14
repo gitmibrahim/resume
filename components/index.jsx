@@ -13,6 +13,7 @@ const App = () => {
     const [pathname, setPathname] = useState(location.pathname)
 
     globalHistory.listen(() => {
+        console.log(pathname);
         setPathname(location.pathname)
     })
     
@@ -27,7 +28,7 @@ const App = () => {
     return (
         <div id="app">
             <nav id="techNav" className="hiddenOnPrint">
-                <h1>{pathname === '/resume/' ? 'you don\'t understand this?' : 'are you a techie?'}</h1>
+                <h1>{pathname === '/resume' ? 'you don\'t understand this?' : 'are you a techie?'}</h1>
                 <div id="switch">
                     <p>don't worry, you could switch between: </p>
                     <ExactNavLink to="/resume/">tech</ExactNavLink><span> and </span>
