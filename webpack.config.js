@@ -1,5 +1,5 @@
-var path = require('path')
-var HtmlWebpackPlugin = require('html-webpack-plugin')
+var path = require('path');
+var HtmlWebpackPlugin = require('html-webpack-plugin');
 var CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
@@ -10,7 +10,7 @@ module.exports = {
         filename: '[name].bundle.js',
         chunkFilename: '[name].bundle.js',
         path: path.resolve(__dirname, 'docs'),
-        publicPath: '/',
+        publicPath: './'
     },
     module: {
         rules: [
@@ -20,16 +20,16 @@ module.exports = {
             { test: /\.(sass|scss)$/, use: ["style-loader", "css-loader", "sass-loader"] }
         ]
     },
-    mode: 'development',
+    mode: 'production',
     devServer: {
         historyApiFallback: true,
     },
     plugins: [
         new HtmlWebpackPlugin({
-            template: './components/index.html'
+            template: './components/index.html',
         }),
         new CopyWebpackPlugin([
             { from: './assets', to: 'assets' }
-        ]),
+        ])
     ]
 };
