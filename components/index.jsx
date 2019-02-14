@@ -28,15 +28,15 @@ const App = () => {
     return (
         <div id="app">
             <nav id="techNav" className="hiddenOnPrint">
-                <h1>{pathname === '/resume' ? 'you don\'t understand this?' : 'are you a techie?'}</h1>
+                <h1>{pathname === '/resume/' ? 'you don\'t understand this?' : 'are you a techie?'}</h1>
                 <div id="switch">
                     <p>don't worry, you could switch between: </p>
-                    <ExactNavLink to="/resume">tech</ExactNavLink><span> and </span>
+                    <ExactNavLink to="/resume/">tech</ExactNavLink><span> and </span>
                     <ExactNavLink to="/resume/for-the-non-technicals">non-tech</ExactNavLink><span> views.</span>
                 </div>
             </nav>
             <Router>
-                <Tech path="/resume" />
+                <Tech path="/resume/" />
                 <NonTech path="/resume/for-the-non-technicals" />
             </Router>
         </div>
