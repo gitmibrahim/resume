@@ -27,7 +27,6 @@ module.exports = {
     plugins: [
         new HtmlWebpackPlugin({
             template: './components/index.html',
-            baseUrl: process.env.NODE_ENV == 'development' ? '/' : './resume/'
         }),
         new CopyWebpackPlugin([
             { from: './assets', to: 'assets' }

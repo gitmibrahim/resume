@@ -30,13 +30,13 @@ const App = () => {
                 <h1>{pathname === '/' ? 'you don\'t understand this?' : 'are you a techie?'}</h1>
                 <div id="switch">
                     <p>don't worry, you could switch between: </p>
-                    <ExactNavLink to="/">tech</ExactNavLink><span> and </span>
-                    <ExactNavLink to="/for-the-non-technicals">non-tech</ExactNavLink><span> views.</span>
+                    <ExactNavLink to="./">tech</ExactNavLink><span> and </span>
+                    <ExactNavLink to="./for-the-non-technicals">non-tech</ExactNavLink><span> views.</span>
                 </div>
             </nav>
             <Router>
-                <Tech path="/" />
-                <NonTech path="/for-the-non-technicals" />
+                <Tech path="./" />
+                <NonTech path="./for-the-non-technicals" />
             </Router>
         </div>
     )
