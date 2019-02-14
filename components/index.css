@@ -29,10 +29,11 @@ body::-webkit-scrollbar-thumb:active {
   z-index: 1;
   bottom: -92px;
   right: 30px;
-  transition: 700ms;
+  transition: 400ms;
   transition-property: bottom;
   padding: 0.6em;
   border: 2px solid #5f9ea0;
+  opacity: .7;
 }
 @media (min-width: 1023px) {
   #techNav {
@@ -40,7 +41,8 @@ body::-webkit-scrollbar-thumb:active {
   }
 }
 #techNav:hover {
-  bottom: 0
+  bottom: 0;
+  opacity: 1;
 }
 #techNav h1 {
   margin: .2em 0;

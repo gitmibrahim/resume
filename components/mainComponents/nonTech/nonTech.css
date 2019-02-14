@@ -74,7 +74,6 @@ li p {
 .projects {
   margin-right: 20px;
 }
-
 .projects::after{
   display: inline-block;
   content: '';
