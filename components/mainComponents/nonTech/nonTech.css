@@ -29,12 +29,18 @@ address {
   border: 1px solid #dedede;
   display: initial;
 }
-#info li {
+#info li, #ghPages {
   list-style: none;
   border-bottom: 1px dotted #ccc;
   height: auto;
   padding: 10px 10px 10px 70px;
   word-break: break-word;
+}
+#ghPages {
+  font-family: courier, monospace;
+}
+#ghPages a {
+  text-decoration: underline;
 }
 #avatarWrapper {
   text-indent: 0 !important;

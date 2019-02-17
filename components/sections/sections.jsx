@@ -7,16 +7,13 @@ const Sections = () => {
   let headline = 0
   const scrollToTop = () => {
     window.scrollTo(0,0)
-    window.location.hash = ''
+    // window.location.hash = ''
   }
 
   return (
     <section id="sections">
       <article id="history">
-          <h1>
-            <span>{headlines[headline++].content}:</span>{' '}
-            <a className="backtotop" onClick={scrollToTop} title="back to top">🡩</a>
-          </h1>
+          <h1>{ headlines[headline++].content + ':'}</h1>
           {languages.map((snippet, index) => 
               snippet.title == 'break'
                   ? <h2 key={index + 'lang'} className="phase">{snippet.phase}:</h2>
@@ -26,10 +23,7 @@ const Sections = () => {
 
       <hr/>
       <article id="tools">
-          <h2>
-            <span>{headlines[headline++].content}:</span>{' '}
-            <a className="backtotop" onClick={scrollToTop} title="back to top">🡩</a>
-          </h2>
+          <h2>{ headlines[headline++].content + ':'}</h2>
           <div className="tools images">
               {tools.map(tool => <img key={tool} src={tool} alt={tool.replace(/^.*[\\\/]/, '')} title={'I use: ' + tool.match(/([^\/]+)(?=\.\w+$)/)[0] + ' in my work'} />)}
           </div>
@@ -37,10 +31,7 @@ const Sections = () => {
 
       <hr/>
       <article id="learning">
-          <h2>
-            <span>{headlines[headline++].content}:</span>{' '}
-            <a className="backtotop" onClick={scrollToTop} title="back to top">🡩</a>
-          </h2>
+          <h2>{ headlines[headline++].content + ':'}</h2>
           <div className="tools images">
               {learning.map(thing => <img key={thing} src={thing} alt={thing.replace(/^.*[\\\/]/, '')} title={'I\'m currently learning ' + thing.match(/([^\/]+)(?=\.\w+$)/)[0]} />)}
           </div>
@@ -48,10 +39,7 @@ const Sections = () => {
 
       <hr/>
       <article id="rLearning">
-          <h2>
-            <span>{headlines[headline++].content}:</span>{' '}
-            <a className="backtotop" onClick={scrollToTop} title="back to top">🡩</a>
-          </h2>
+          <h2>{ headlines[headline++].content + ':'}</h2>
           <div className="tools text">
               {rLearning.map(r => <p key={r}>{r}</p>)}
           </div>
@@ -59,10 +47,7 @@ const Sections = () => {
 
       <hr/>
       <article id="portfolio">
-          <h2>
-            <span>{headlines[headline++].content}:</span>{' '}
-            <a className="backtotop" onClick={scrollToTop} title="back to top">🡩</a>
-          </h2>
+          <h2>{ headlines[headline++].content + ':'}</h2>
           <div className="tools text">
               {projects.map(project => <a key={project.link} href={project.link} target="_blank">{project.title}</a>)}
           </div>
