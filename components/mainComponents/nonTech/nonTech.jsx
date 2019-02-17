@@ -29,7 +29,7 @@ const NonTech = props => {
       <div id="lines"></div>
       <ul id="info">
         <li className="visibleOnPrint">find this resume <a href="https://gitmibrahim.github.io/resume/#/for-the-non-technicals">here on GitHub Pages</a></li>
-        <h1 id="avatarWrapper">
+        <h1 id="avatarWrapper" className="visibleOnPrint">
           <Avatar id="nonTechPic" />
         </h1>
         <li>Muhammed Ibrahim</li>
