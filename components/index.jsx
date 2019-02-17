@@ -25,7 +25,7 @@ const App = () => {
                 <nav id="techNav" className="hiddenOnPrint">
                     <h1>{hash === '#/' ? 'you don\'t understand this?' : 'are you a techie?'}</h1>
                     <div id="switch">
-                        <p>{hash === '#/' ? 'don\'t worry, you could ' : null}switch between: </p>
+                        <p>{hash === '#/' ? 'don\'t worry, you could ' : 'you have another view, '}switch between: </p>
                         <Link className={hash === '#/' ? 'active' : null} to="/">tech</Link><span> and </span>
                         <Link className={hash === '#/' ? null : 'active'} to="/for-the-non-technicals">non-tech</Link><span> views.</span>
                     </div>
