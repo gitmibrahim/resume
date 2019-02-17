@@ -29,7 +29,13 @@ address {
   border: 1px solid #dedede;
   display: initial;
 }
-#info li {
+p {
+  font-family: courier, monospace;
+}
+#ghPages {
+  text-decoration: underline !important;
+}
+li, p {
   list-style: none;
   border-bottom: 1px dotted #ccc;
   height: auto;
@@ -44,7 +50,7 @@ address {
   width: 24vmax;
   height: 24vmax;
 }
-#info li:hover {
+li:hover, p:hover {
   background: #f0f0f0;
   transition: background 0.2s;
 }
