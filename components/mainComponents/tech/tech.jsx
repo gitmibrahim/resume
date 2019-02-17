@@ -13,7 +13,7 @@ const Tech = props => {
           {info.map((snippet, index) => <Code key={index + 'info'} noHeadline={true} {...snippet} />)}
       </section>
       <article id="codeBlocks" className="onPrint">
-        <p className="visibleOnPrint">find this resume <a href="https://gitmibrahim.github.io/resume/">here on GitHub Pages</a></p>
+        <p className="visibleOnPrint">find this resume <a href="https://gitmibrahim.github.io/resume/#/">here on GitHub Pages</a></p>
         <nav id="jump" aria-labelledby="sectionsNavigation">
             <p id="sectionsNavigation">jumb to: </p>
             {headlines.map((h, index) => 

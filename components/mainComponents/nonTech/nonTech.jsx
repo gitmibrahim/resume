@@ -28,7 +28,7 @@ const NonTech = props => {
     <div id="nonTech">
       <div id="lines"></div>
       <ul id="info">
-        <li className="visibleOnPrint">find this resume <a href="https://gitmibrahim.github.io/resume/for-the-non-technicals">here on GitHub Pages</a></li>
+        <li className="visibleOnPrint">find this resume <a href="https://gitmibrahim.github.io/resume/#/for-the-non-technicals">here on GitHub Pages</a></li>
         <h1 id="avatarWrapper">
           <Avatar id="nonTechPic" />
         </h1>

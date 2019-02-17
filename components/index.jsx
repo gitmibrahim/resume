@@ -1,6 +1,7 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import { render } from 'react-dom';
-import { Router, Link, createHistory, globalHistory } from '@reach/router'
+import { HashRouter as Router, Link, Route, Switch } from 'react-router-dom'
+import { createBrowserHistory } from 'history';
 import '../assets/public/fonts.css'
 import './index.css'
 import './print.css'
@@ -8,37 +9,35 @@ import '../assets/styles/railscasts.css'
 import Tech from './mainComponents/tech/tech.jsx'
 import NonTech from './mainComponents/nonTech/nonTech.jsx'
 
+
+
 const App = () => {
-    const techNavClasses = 'hiddenOnPrint tab '
-    const [pathname, setPathname] = useState(location.pathname)
+    const [hash, setHash] = useState(location.hash)
+    const history = createBrowserHistory();
 
-    globalHistory.listen(() => {
-        setPathname(location.pathname)
+    history.listen(() => {
+        setHash(history.location.hash)
+        console.log(hash);
     })
-    
-    const isActive = ({ isCurrent }) => {
-        return isCurrent ? { className: techNavClasses + "active" } : { className: techNavClasses}
-    }
-
-    const ExactNavLink = props => (
-        <Link getProps={isActive} {...props} />
-    )
 
     return (
-        <div id="app">
-            <nav id="techNav" className="hiddenOnPrint">
-                <h1>{pathname === '/' ? 'you don\'t understand this?' : 'are you a techie?'}</h1>
-                <div id="switch">
-                    <p>don't worry, you could switch between: </p>
-                    <ExactNavLink to="/">tech</ExactNavLink><span> and </span>
-                    <ExactNavLink to="/for-the-non-technicals">non-tech</ExactNavLink><span> views.</span>
-                </div>
-            </nav>
-            <Router>
-                <Tech path="/" />
-                <NonTech path="/for-the-non-technicals" />
-            </Router>
-        </div>
+        <Router>
+            <div id="app">
+                <nav id="techNav" className="hiddenOnPrint">
+                    <h1>{hash === '#/' ? 'you don\'t understand this?' : 'are you a techie?'}</h1>
+                    <div id="switch">
+                        <p>don't worry, you could switch between: </p>
+                        <Link className={hash === '#/' ? 'active' : null} to="/">tech</Link><span> and </span>
+                        <Link className={hash === '#/' ? null : 'active'} to="/for-the-non-technicals">non-tech</Link><span> views.</span>
+                    </div>
+                </nav>
+                <Switch>
+                    <Route exact path="/" component={Tech} />
+                    <Route exact path="/for-the-non-technicals" component={NonTech} />
+                </Switch>
+            </div>
+        </Router>
+
     )
 }
 
