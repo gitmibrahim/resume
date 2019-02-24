@@ -3,9 +3,7 @@ var HtmlWebpackPlugin = require('html-webpack-plugin');
 var CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
-    entry: {
-        index: './components/index.jsx'
-    },
+    entry: './components/index.jsx',
     output: {
         filename: '[name].bundle.js',
         chunkFilename: '[name].bundle.js',

@@ -11,48 +11,105 @@ body::-webkit-scrollbar-track {
 }
 body::-webkit-scrollbar-thumb {
   border-radius: 10px;
-  background: #81d7da; 
+  background: #FFE70B; 
 }
 body::-webkit-scrollbar-thumb:active {
-  background: #5f9ea0; 
+  background: #f1e797; 
 }
 ::selection {
-  color: #81d7da;
-  background: #12393a;
+  color: #e6e1dc;
+  background: #2c251b;
 }
 
-#techNav {
-  position: fixed;
-  width: 30%;
-  min-width: 250px;
-  background: #f3f2f2;
-  z-index: 1;
-  bottom: -92px;
-  right: 30px;
-  transition: 400ms;
-  transition-property: bottom;
-  padding: 0.6em;
-  border: 2px solid #5f9ea0;
-  opacity: .7;
+#app {
+  display: flex;
+  min-height: 100vh;
 }
-@media (min-width: 1023px) {
-  #techNav {
-    bottom: -75px;
+
+@media (max-width: 842px) {
+  #app {
+    display: block !important;
+  }
+  #profile {
+    position: initial !important;
+    width: initial !important;
+    height: initial!important;
+  }
+  #codeBlocks {
+    width: initial !important;
+    margin-left: initial !important;
+  }
+  .tools img {
+    max-width: 250px !important;
+    max-height: 100px !important;
   }
 }
-#techNav:hover {
-  bottom: 0;
-  opacity: 1;
+
+#profile {
+  position: fixed;
+  width: 300px;
+  padding: 8vmin 0;
+  height: 100%;
+  overflow-y: auto;
+  background-color: #051010;
 }
-#techNav h1 {
-  margin: .2em 0;
+
+#profile::-webkit-scrollbar {
+  width: 7px;
 }
-#switch {
-  display: inline-block;
+
+#profile::-webkit-scrollbar-track {
+  background: #000; 
 }
-#switch .active {
-  background-color: #232323;
-  color: #f3f2f2;
-  padding: 0 .6em;
+
+#profile::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: #5f9ea0; 
+}
+
+#profile::-webkit-scrollbar-thumb:hover {
+  background: #448b8d; 
+}
+
+#profile::-webkit-scrollbar-thumb:active {
+    background: #267174; 
+}
+
+#profile .codeContainer {
+  width: 80%;
+  margin: 50px auto;
+}
+
+#codeBlocks {
+  width: 100%;
+  padding: 8vmin;
+  background-color: #f0cd06;
+  margin-left: 300px;
+}
+
+#codeBlocks .codeContainer {
+  margin: 0 0 60px;
+}
+
+#codeBlocks .hljs {
+  border: 1px solid #fff;
+  border-radius: 10px
+}
+
+h1 {
+  font-size: 1.17em;
+}
+
+h1, h2, nav, p, a {
+  color: #000;
+  font-family: MerriweatherSansRegular;
+}
+
+#jump, #jump * {
+  color: #696969;
   text-decoration: none;
+}
+
+.visibleOnPrint {
+  display: none;
 }

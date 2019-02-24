@@ -2,9 +2,9 @@ import React from 'react'
 import './avatar.css'
 
 //Avatar
-const Avatar = props => {
+const Avatar = () => {
   return (
-      <div id={props.id} className="onPrint">
+      <div id="profilePicContainer">
         <img id="profilePic" src="../assets/images/avatar.jpg" alt="Muhammed Ibrahim's Image"/>
       </div>
   )

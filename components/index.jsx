@@ -1,42 +1,34 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { render } from 'react-dom';
-import { HashRouter as Router, Link, Route, Switch } from 'react-router-dom'
-import { createBrowserHistory } from 'history';
+import Avatar from './avatar/avatar.jsx'
+import Code from './code/code.jsx'
+import Sections from './sections/sections.jsx'
 import '../assets/public/fonts.css'
 import './index.css'
 import './print.css'
 import '../assets/styles/railscasts.css'
-import Tech from './mainComponents/tech/tech.jsx'
-import NonTech from './mainComponents/nonTech/nonTech.jsx'
-
-
+import {headlines, info} from '../models/data.js'
 
 const App = () => {
-    const [hash, setHash] = useState(location.hash)
-    const history = createBrowserHistory();
-
-    history.listen(() => {
-        setHash(history.location.hash)
-    })
-
     return (
-        <Router>
-            <div id="app">
-                <nav id="techNav" className="hiddenOnPrint">
-                    <h1>{hash === '#/' ? 'you don\'t understand this?' : 'are you a techie?'}</h1>
-                    <div id="switch">
-                        <p>{hash === '#/' ? 'don\'t worry, you could ' : 'you have another view, '}switch between: </p>
-                        <Link className={hash === '#/' ? 'active' : null} to="/">tech</Link><span> and </span>
-                        <Link className={hash === '#/' ? null : 'active'} to="/for-the-non-technicals">non-tech</Link><span> views.</span>
-                    </div>
+        <div id="app">
+            <section id="profile" className="onPrint">
+                <Avatar />
+                {info.map((snippet, index) => <Code key={index + 'info'} noHeadline={true} {...snippet} />)}
+            </section>
+            <article id="codeBlocks" className="onPrint">
+                <p className="visibleOnPrint">find this resume <a href="https://gitmibrahim.github.io/resume/">here on GitHub Pages</a></p>
+                <nav id="jump" aria-labelledby="sectionsNavigation">
+                    <p id="sectionsNavigation">jumb to: </p>
+                    {headlines.map((h, index) => (
+                        <a href={'#' + h.id} key={h.id}>{ h.content }{index !== headlines.length - 1 && <span>{' ــ '}</span>}</a>)
+                        
+                    )}
                 </nav>
-                <Switch>
-                    <Route exact path="/" component={Tech} />
-                    <Route exact path="/for-the-non-technicals" component={NonTech} />
-                </Switch>
-            </div>
-        </Router>
-
+                <hr/>
+                <Sections />
+            </article>
+        </div>
     )
 }
 

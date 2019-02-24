@@ -10,7 +10,7 @@ const Code = props => {
 
   return (
     <div className="codeContainer">
-      {!props.noHeadline && <h2 className="langName">{props.title}</h2>}
+      {!props.noHeadline && <p className="langName">{props.title}</p>}
       <pre className="preCode">
         <code className={props.language || 'javascript'}>
           {`${props.code}`}

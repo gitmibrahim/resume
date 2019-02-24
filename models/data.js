@@ -13,9 +13,7 @@ const info = [
         code: `const experienceInYears = {
     amateur: 1,
     professional: 1,
-    get total() {
-        return this.amateur + this.professional
-    }
+    total: this.amateur + this.professional
 }`
     },
     {
@@ -43,14 +41,11 @@ const languages = [
         title: 'Blade (Laravel templating engine)',
         language: 'php',
         code: `
-
  foreach ($users as $user)
     @if ($user->type == 1)
         @continue
     @endif
-
     <li>{{ $user->name }}</li>
-
     @if ($user->number == 5)
         @break
     @endif
@@ -61,9 +56,7 @@ const languages = [
         title: 'jQuery',
         language: 'jQuery',
         code: `
-
  $('#navbar').appendChild(menu);
-
  $.ajax({
     type: 'POST',
     url: "/users",
@@ -82,7 +75,6 @@ const languages = [
         title: 'ES5',
         language: 'javascript',
         code: `
-
  var arr = ['vanillajs', 'is', 'plain', 'js'];
  arr = arr.map(function (word) {
     return word.toUpperCase();
@@ -94,7 +86,6 @@ const languages = [
         title: 'Angular 4+',
         language: 'javascript',
         code: `
-
  @Component({
     selector: 'app-header',
     templateUrl: './header.component.html',
@@ -107,7 +98,6 @@ const languages = [
         title: 'Ionic 3',
         language: 'html',
         code: `
-
  <ion-item>
     <ion-icon name="logo-twitter" item-start></ion-icon>
     Followers
@@ -119,7 +109,6 @@ const languages = [
         title: 'ES6',
         language: 'javascript',
         code: `
-
  let arr = ['vanillajs', 'is', 'plain', 'js'];
  arr = arr.map(word => word.toUpperCase()).join(' ');
          `
@@ -128,15 +117,12 @@ const languages = [
         title: 'React',
         language: 'javascript',
         code: `
-
  import React, { useState } from 'react'
  import Logo from '../logo/logo.jsx'
  import './header.css'
-
  const Header = props => {
     const [showLogo, setShowLogo] = useState(true)
     if (!props.showLogo) setShowLogo(false)
-
     return (
         <header id="header">
             {showLogo && <Logo />}
@@ -144,7 +130,6 @@ const languages = [
         </header>
     )
  }
-
  export default Header
          `
     },
@@ -152,7 +137,6 @@ const languages = [
         title: 'Vue.js',
         language: 'javascript',
         code: `
-
  const App = new Vue({
     el: '#app',
     store,
@@ -172,7 +156,7 @@ const languages = [
     },
     computed: {
         selectedProduct() {
-            return this.$store.state.selectedProduct
+        return this.$store.state.selectedProduct
         }
     }
  })
@@ -188,7 +172,7 @@ const rLearning = ['C Lang.', 'Discrete Math', 'Dessign Patterns', 'Data Structu
 
 const projects = [
     {title: 'Playground', link: 'https://mibrahim-resume.firebaseapp.com/playground'},
-    {title: 'Interview Task', link: 'https://gitmibrahim.github.io/rizkalla/'},
+    {title: 'Interview Task', link: 'https://frontend-resume-1.firebaseapp.com'},
     {title: 'Hanagoeslocal', link: 'https://hanagoeslocal.com/shop'},
     {title: 'Ma3arij', link: 'http://www.ma3arij.com'},
     {title: 'Filteration Task', link: 'https://gitmibrahim.github.io/fly365-code-challenge/src/index.html'}
