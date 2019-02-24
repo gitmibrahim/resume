@@ -13,6 +13,11 @@
     height: unset !important;
   }
 
+  #profilePicContainer {
+    width: 10vmax !important;
+    height: 10vmax !important;
+  }
+
   #codeBlocks.onPrint {
     width: 80vw !important;
     margin-left: 0 !important;
